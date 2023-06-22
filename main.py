@@ -176,7 +176,7 @@ def play(game_id: int):
                 player_idx = (leader + j) % 4
                 partner_idx = (player_idx + 2) % 4
 
-                g = {
+                data = {
                     "hand_num": hand_number,
                     "players": [
                         {"hand": player.hand, "id": i, "tricks_won": player.tricks_won}
@@ -191,7 +191,7 @@ def play(game_id: int):
                     "score": score,
                     "current_trick": played_,
                 }
-                record = Record(g)
+                record = Record(data)
 
                 r = record()
                 try:

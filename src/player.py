@@ -1,9 +1,9 @@
-from math import log1p
+"""Contains much of the game logic for the player"""
 from random import randrange
 from typing import List, Tuple
 
 from .card import Card
-from .utils import BestCard, HandScore, Score, Trump
+from .utils import Score, Trump
 
 LONER_PROBABILITY = 3.5
 
